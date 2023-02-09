@@ -1,0 +1,5 @@
+<td-input (add)="onAdd($event)"></td-input>
+<td-list [items]="(items$ | async) || []"></td-list>
+<td-progress></td-progress>
+
+<pre>{{ state$ | async | json }}</pre>
